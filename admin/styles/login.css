@@ -1,0 +1,628 @@
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+img,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font: 14px/1.5 "微软雅黑", "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana;
+    font-weight: inherit;
+    font-style: inherit
+}
+
+address,
+cite,
+dfn,
+em,
+var,
+i {
+    font-style: normal
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul,
+ol {
+    list-style-type: none
+}
+
+select,
+input,
+img,
+select {
+    vertical-align: middle
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 14px
+}
+
+.cf:after,
+.row:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    content: "."
+}
+
+.cf,
+.row {
+    display: inline-block
+}
+
+* html .cf,
+*html .row {
+    height: 1%
+}
+
+.cf,
+.row {
+    display: block
+}
+
+.fl {
+    float: left;
+    display: inline
+}
+
+.fr {
+    float: right;
+    display: inline
+}
+
+a {
+    color: #505050;
+    text-decoration: none;
+    cursor: pointer
+}
+
+a:hover {
+    color: #167bc1;
+    text-decoration: underline
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+* html,
+* html body {
+    background-image: url(about:blank);
+    background-attachment: fixed
+}
+
+
+/*公共样式*/
+
+.layout {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo {
+    background: url(../images/logo_l.png) no-repeat;
+}
+
+
+
+/*公共样式*/
+
+
+/*呼吸效果*/
+
+.login-body {
+    background-color: #33bbd0
+}
+
+.flashBg {
+    background: url(../images/flash.gif) no-repeat;
+    width: 845px;
+    height: 621px;
+    position: absolute;
+    z-index: 996;
+    left: 50%;
+    top: 50%;
+    margin-top: -320px;
+    margin-left: -447px;
+}
+
+
+/*呼吸效果*/
+
+
+/*登陆框的样式*/
+
+.loginwrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    margin-top: -209px;
+    margin-left: -200px;
+    width: 400px;
+    height: 418px;
+    background-color: #41536f
+}
+
+.loginwrap .box-hd {
+    width: 100%;
+    height: 62px;
+    margin-top: 12px;
+    position: relative;
+}
+
+.loginwrap .box-hd .logo {
+    width: 300px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    border-bottom: 1px solid #66768f;
+    padding-bottom: 2px;
+}
+
+.loginwrap .box-hd .rect {
+    width: 38px;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    margin-left: -19px;
+    bottom: 8px;
+    background: #66768f
+}
+
+
+/*#en-body .loginwrap .hd {width:384px;background-image:url(../images/login/logo-en.png)}*/
+
+.loginwrap .box-bd {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.loginwrap .box-bd .error-tip {
+    position: absolute;
+    bottom: 83px;
+    left: 0;
+    color: #ff8420;
+    font-size: 12px;
+    display: none;
+}
+
+#loginForm .code-wrap,
+#loginForm .input-wrap {
+    margin-top: 22px;
+    overflow: hidden
+}
+
+#loginForm .code-wrap input,
+#loginForm .input-wrap input {
+    background-color: #5b6b83;
+    padding: 12px 0;
+    height: 26px;
+    color: #fff;
+    vertical-align: top;
+    line-height: 26px;
+    *height: 18px;
+    *line-height: 18px
+}
+
+#loginForm .input-wrap {
+    border: 1px solid #3b4d69;
+    position: relative;
+    padding-left: 50px;
+    width: 248px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    background-color: #5b6b83;
+}
+
+#loginForm .input-wrap input {
+    overflow: hidden;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+}
+
+#loginForm .input-wrap span {
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    line-height: 36px;
+    overflow: hidden;
+    color: #b1b8c4;
+    font-size: 30px;
+}
+
+#loginForm .code-wrap input {
+    border: 1px solid #3b4d69;
+    padding-left: 28px;
+    width: 112px;
+}
+
+#loginForm .code-wrap .jcaptchaImage {
+    float: left;
+    margin: 6px 0 0 34px;
+    width: 96px;
+    height: 39px;
+}
+
+.loginwrap .login-btn {
+    display: block;
+    margin-top: 28px;
+    width: 100%;
+    height: 50px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background-color: #33bbd0;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    transition: all 1s;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px
+}
+
+.loginwrap .login-btn:hover {
+    text-decoration: none;
+}
+
+.loginwrap .find-wrap {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.loginwrap .find-wrap a {
+    color: #a1b2cc;
+    font-size: 14px;
+}
+
+
+/*登陆框的样式*/
+
+/*重置密码 头部*/
+
+#header {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #e3e3e3;
+    background-color: #33bbd0;
+    padding-top: 6px;
+    position: relative;
+}
+
+#header .logo {
+    position: relative;
+    background-position: -50px -7px;
+    width: 190px;
+    height: 50px;
+    display: block
+}
+
+#en-body .login-spec {
+    width: 224px;
+    background-position: 1px 7px
+}
+
+#header .logo-title {
+    padding: 0 0 0 15px;
+    line-height: 30px;
+    font-size: 20px;
+    color: #fff;
+    border-left: 2px solid #fff;
+    margin: 4px 0 0 11px;
+    float: left;
+}
+
+#header .gotoIndex {
+    float: right;
+    color: #fff;
+    margin-top: 8px;
+    margin-right: 15px;
+}
+
+
+/*重置密码 头部*/
+
+
+/*重置密码表单*/
+
+.reset-body {
+    background: #f0f5f9;
+}
+
+.reset-body .input-wrap {
+    min-height: 40px;
+    background-color: #fff;
+}
+
+.reset-body .input-wrap .label {
+    display: inline-block;
+    width: 210px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 32px;
+    color: #505050;
+    margin-right: 5px;
+}
+
+.reset-body .input-wrap input {
+    border: 1px solid #c8c8c8;
+    width: 250px;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    padding: 5px 10px;
+    *height: 18px;
+    *line-height: 18px;
+    vertical-align: top;
+    background-color: #fff
+}
+
+.reset-body .input-wrap .usr-icon {
+    background-position: -1px -1px;
+    width: 15px;
+    height: 15px;
+    top: 18px
+}
+
+.reset-body .input-wrap .pwd-icon {
+    background-position: -1px -18px;
+    width: 16px;
+    height: 8px;
+    top: 23px
+}
+
+.reset-body .login-btn-wrap {
+    text-align: center;
+}
+
+.reset-body .login-btn-wrap .green-btn {
+    background: #4d6584;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 2px;
+    padding: 0 20px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+}
+
+
+/*错误提示*/
+
+.diy-error-txt {
+    position: static;
+    padding: 0;
+    margin: 5px 0 10px 220px;
+    white-space: normal;
+    color: #f00;
+    border: 0
+}
+
+.diy-error-txt .x-icon {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    text-align: center
+}
+
+.diy-error-txt .x-icon-error {
+    height: 12px;
+    width: 12px;
+    line-height: 12px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid transparent;
+    cursor: inherit;
+    font-size: 14px
+}
+
+
+/*错误提示*/
+
+.success-send {
+    padding-top: 130px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #36bbd0;
+    background: url(../img/successEmail.png) no-repeat 50% 0;
+}
+
+.sysErrorTip {
+    position: absolute;
+    top: 160px;
+    left: 213px;
+    color: #f00
+}
+
+
+/*重置密码表单*/
+
+.content {
+    width: 732px;
+    background-color: #fff;
+    margin: 30px auto;
+    position: relative;
+    z-index: 4
+}
+
+.content .panel-hd {
+    height: 40px;
+    background: #f6fafe;
+    border: 1px solid #dde0e7;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    line-height: 40px;
+    padding-left: 20px;
+    color: #61728a;
+}
+
+.content .panel-bd {
+    padding: 40px 20px;
+    border: 1px solid #dde0e7;
+    border-top: 0 none;
+    background: #fff;
+}
+
+
+/*重置密码 底部*/
+
+
+/*重置密码 底部*/
+
+
+/*底部*/
+
+
+/*登陆页的底部*/
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 997;
+    width: 100%;
+    background: #41536f;
+    height: 66px;
+    padding-top: 6px;
+}
+
+.footer p {
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #7c92b4
+}
+
+
+/*重置页的底部*/
+
+#footer {
+    width: 100%;
+    border-top: 1px solid #e3e3e3;
+    background-color: #282828;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 3;
+}
+
+#footer p {
+    line-height: 20px;
+    font-size: 12px;
+    color: #858585;
+}
+
+
+/*底部*/
+
+
+/*弹出层的样式   重置密码要用*/
+
+.dialog-wrap,
+.dialogWin {
+    display: none;
+    position: relative;
+    z-index: 1001;
+    background: #fff
+}
+
+.showErrorTip .dialog-inner,
+.showSuccessTip .dialog-inner {
+    padding: 0 15px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    background: #ff8c64;
+    border-radius: 2px
+}
+
+.showSuccessTip .dialog-inner {
+    background: #34d277
+}
+
+.tips-succ,
+.tips-warn {
+    padding: 40px 20px 10px;
+    text-align: center;
+    font-size: 14px
+}
+
+.tips-succ {
+    color: #4d6584
+}
+
+.tips-warn {
+    color: #f40
+}
+
+.login-error{
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+
+/*弹出层的样式   重置密码要用*/
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 600px #5b6b83 inset;
+    -webkit-text-fill-color: #fff;
+}
